@@ -28,7 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/spartacus/user.scss",
+              "src/styles/spartacus/product.scss",
+              "src/styles/spartacus/cart.scss"
             ],
             "scripts": []
           },
@@ -92,7 +95,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/spartacus/user.scss",
+              "src/styles/spartacus/product.scss",
+              "src/styles/spartacus/cart.scss"
             ],
             "scripts": []
           }
@@ -123,6 +129,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "test-components"
 }
