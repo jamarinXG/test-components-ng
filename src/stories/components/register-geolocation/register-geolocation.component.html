@@ -1,0 +1,19 @@
+<ng-template #registerModal let-modal class="register-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+          <button type="button" class="close modal-close btn-close-modal" aria-label="Close" (click)="dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+        <div [innerHTML]="modalBody"></div>
+        <button class="btn btn-primary btn-block btn-change-location" (click)="changeLocation(currentCountry)">Change location to {{ currentCountry }}</button>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<button class="btn btn-info btn-open-modal" id="testid" (click)="openModal(registerModal)">Open modal</button>
+<hr>
+<pre>{{ countrySelected }}</pre>
+<br>
+<pre>{{ closeResult }}</pre>

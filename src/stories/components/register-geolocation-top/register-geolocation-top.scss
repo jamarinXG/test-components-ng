@@ -1,0 +1,69 @@
+.GeolocationRegisterTop {
+    width: 100%;
+    margin: 25px 0 10px;
+    overflow: hidden;
+
+    &  ~ .SiteContext::after {
+        border: none;
+    }
+}
+
+.location-top-msg {
+    display: flex;
+    align-items: stretch;
+    
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #33b5e5;
+        line-height: 43px;
+        font-size: 20px;
+        color: rgba(0,0,0,0.5);
+        padding: 8px;
+    }
+    .right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 15px;
+        background-color: white;
+        color: black;
+
+        p {
+            margin: 0;
+        }
+        .actions {
+            flex: 1 0 auto;
+            text-align: right;
+
+            button {
+                text-transform: none;
+            }
+        }
+        .btn-change-country {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .location-top-msg .right {
+        flex-direction: column;
+
+        .actions {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            button {
+                width: 100%;
+            }
+        }
+
+        .btn-change-country {
+            margin: 10px 0;
+        }
+    }
+}
